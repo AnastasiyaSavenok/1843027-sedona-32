@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <header class="page-header">
@@ -41,25 +42,29 @@
               </svg>
               <span class="visually-hidden">Избранное</span>
             </a>
-            <div class="popover popover-cart">
+            <div class="popover popover-card">
               <div class="popover-content">
                 <h2 class="visually-hidden">Избранное</h2>
                 <ul class="cards-item-list">
                   <li class="cards-item">
-                    <img class="cards-item-image" src="images/content/hotel-1-small.jpg" width="48" height="48" alt="Фотография отеля Desert Quail Inn.">
-                    <p class="cards-item-title">Desert Quail Inn</p>
-                    <p class="cards-item-type">Мотель</p>
+                    <a class="popover-card-link" href="hotel.html">
+                      <img class="cards-item-image" src="images/content/hotel-1-small.jpg" width="48" height="48" alt="Фотография отеля Desert Quail Inn.">
+                      <p class="cards-item-title">Desert Quail Inn</p>
+                      <p class="cards-item-type">Мотель</p>
+                    </a>
                     <button type="button" class="cards-item-button">
-                      <svg width="16" height="16" aria-hidden="true" focusable="false" fill-rule="evenodd" clip-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" fill="#000"/>
+                      <svg width="16" height="16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/>
                       </svg>
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
                   <li class="cards-item">
-                    <img class="cards-item-image" src="images/content/hotel-2-small.jpg" width="48" height="48" alt="Фотография отеля Desert Quail Inn.">
-                    <p class="cards-item-title">Villas at Poco Diablo</p>
-                    <p class="cards-item-type">Апартаменты</p>
+                    <a class="popover-card-link" href="hotel.html">
+                      <img class="cards-item-image" src="images/content/hotel-2-small.jpg" width="48" height="48" alt="Фотография отеля Desert Quail Inn.">
+                      <p class="cards-item-title">Villas at Poco Diablo</p>
+                      <p class="cards-item-type">Апартаменты</p>
+                    </a>
                     <button type="button" class="cards-item-button">
                       <svg width="16" height="16" aria-hidden="true" focusable="false" fill-rule="evenodd" clip-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" fill="#000"/>
@@ -224,10 +229,9 @@
         </section>
       </div>
     </footer>
-
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -258,13 +262,48 @@
                 </span>
                 <input class="field-modal input-adults" type="number" id="mumber-of-adults" name="mumber-of-adults" placeholder="2">
               </p>
-
               <p class="field-group">
                 <label class="modal-form-label form-label-icon" for="mumber-of-children">Дети:</label>
-                <button class="info" type="button">
+                <button class="info-button" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
                 <input class="field-modal input-children" type="number" id="mumber-of-children" name="mumber-of-children" placeholder="1">
               </p>
+            </div>
+            <div class="container-buttons-modal">
+              <div class="buttons-adult">
+                <button class="button less-button-adult" type="number">
+                  <span class="visually-hidden">Уменьшить количество взрослых</span>
+                  <svg class="modal-simbols" width="13" height="1" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3" d="M0 0v1h13V0H0Z"/>
+                  </svg>
+                </button>
+                <button class="button more-button-adult" type="number">
+                  <span class="visually-hidden">Увеличить количество взрослых</span>
+                  <svg class="modal-simbols" width="13" height="13" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="buttons-children">
+                <button class="button less-button less-button-children" type="number">
+                  <span class="visually-hidden">Уменьшить количество детей</span>
+                  <svg class="modal-simbols" width="13" height="1" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3" d="M0 0v1h13V0H0Z"/>
+                  </svg>
+                </button>
+                <button class="button more-button more-button-children" type="number">
+                  <span class="visually-hidden">Увеличить количество детей</span>
+                  <svg class="modal-simbols" width="13" height="13" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="info-active">
+              <div class="info-content">
+                <h2 class="visually-hidden">Информация о размещении детей до 18 лет</h2>
+                <span class="info-children-text">Укажите количество детей, <br>которые будут с вами, возраст <br>которых от 6 до 18 лет. Дети <br>до 6 лет размещаются <br>бесплатно.</span>
+              </div>
             </div>
 
             <button class="button search-modal-button" type="submit">Найти</button>
