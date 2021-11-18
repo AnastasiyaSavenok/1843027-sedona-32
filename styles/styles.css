@@ -937,7 +937,7 @@ opacity: 0.3;
   z-index: 1;
   box-sizing: border-box;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 18px 22px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1076,7 +1076,7 @@ opacity: 0.3;
   list-style-type: none;
 }
 
-.catalog-filter-item:not(last-child) {
+.catalog-filter-item:not(:last-child) {
   margin-bottom: 13px;
 }
 
